@@ -36,6 +36,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "name": "@inc/fastify-ws",
   "scripts": {
     "test": "run-s test:*",
     "test:dependencies": "updates -u ./",
