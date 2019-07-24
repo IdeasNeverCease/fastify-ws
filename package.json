@@ -7,23 +7,23 @@
     "url": "https://hub.socii.network/inc"
   },
   "dependencies": {
-    "bufferutil": "^4.0.0",
-    "fastify-plugin": "^1.3.0",
-    "utf-8-validate": "^5.0.1",
-    "ws": "^6.1.2"
+    "bufferutil": "^4.0.1",
+    "fastify-plugin": "^1.6.0",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.1.1"
   },
   "description": "WebSocket support for Fastify",
   "devDependencies": {
-    "@inc/eslint-config": "^1.1.2",
-    "eslint": "^5.9.0",
-    "fastify": "^1.13.1",
-    "husky": "^1.2.0",
+    "@inc/eslint-config": "^2019.7.23",
+    "eslint": "^6.1.0",
+    "fastify": "^2.6.0",
+    "husky": "^3.0.1",
     "npm-run-all": "^4.1.5",
     "snazzy": "^8.0.0",
-    "standardx": "^3.0.1",
-    "updates": "^5.4.3"
+    "standardx": "^4.0.0",
+    "updates": "^8.5.1"
   },
-  "homepage": "https://git.inc.sh/IdeasNeverCease/fastify-ws",
+  "homepage": "https://code.webb.page/IdeasNeverCease/fastify-ws",
   "husky": {
     "hooks": {
       "pre-commit": "npm run test:lint"
@@ -39,12 +39,9 @@
   "name": "@inc/fastify-ws",
   "scripts": {
     "test": "run-s test:*",
-    "test:dependencies": "updates -u ./",
+    "test:dependencies": "updates --update ./",
     "test:lint": "standardx --verbose | snazzy"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://git.inc.sh/IdeasNeverCease/fastify-ws.git"
-  },
-  "version": "1.1.0"
+  "repository": "https://code.webb.page/IdeasNeverCease/fastify-ws",
+  "version": "2019.07.23"
 }
